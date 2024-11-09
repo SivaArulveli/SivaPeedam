@@ -1,0 +1,55 @@
+declare -gx DIRENV_CONFIG=/etc/direnv
+declare -gx REPLIT_ENVIRONMENT=production
+declare -gx NIX_PS1='\[\033[01;34m\]\w\[\033[00m\]\$ '
+declare -gx NIX_PROFILES='/nix/var/nix/profiles/default /home/runner/.nix-profile'
+declare -gx REPL_IDENTITY=v2.public.Q2lRMk5tWXlZVEZoWkMwek16YzFMVFF4TVdJdE9ERmlaUzFoWVRBMVlXWmxaVE0xTW1NU0MzTm5iVzl2Y25Sb2VXRnBHaDlIWVd4cGJHVnZMV1JsYzJsbmJpMVRiMmxzTFZOaGJYQnNaUzFNYVhOMElpUTJObVl5WVRGaFpDMHpNemMxTFRReE1XSXRPREZpWlMxaFlUQTFZV1psWlRNMU1tTTQrOW44RVZvVUNnVnphWE5yYnhJTGFXNTBaWEpoWTNScGRtVT0PPAKNVQRXpzhbHYkgSZS9V1fCdLdB1SkoVXM7Azi5QxocraV9rsSP0F-6Z7q5wEDL-rvXn0sf2AilNU4QilkJ.R0FFaUJtTnZibTFoYmhLV0NIWXlMbkIxWW14cFl5NVJNbVF6VTFkNGVXTlViREZWVm14U1RrUmtkVlZ1UmtKVVZrNUZVVmR3YzJOdVRsaE9WVXB2VWtSR01scEZaSFpSV0doMlVUQmtRbFpYUmt0YU1qbHlWRzF3WVdKVk1YUlNXR2hhVmpGR01GUlljRTVOTURWVVRVUkNUbFpGV25CVVJsSnVaVVpzZEZaWVVscFdNRll6Vkd4a1IySldjRmhXV0hCUFZrVndjVkl5WTNkVk1FMTZWRzAxYVZaNmJESlpNalZUWWpKV1dGSnVRa2hhTVZVd1MzcHNkVTlGVmxOaU1HaEtXakZhTmxsV2FFOWpiVW8wWWpBMVRGb3pVbmRaYlRWVFlrZE9kRkp0Y0d0U01uZDVWMnhPU2sxWFJqWlRXRlpxVTBaYWNGbHJaSE5oYTNoeFdqTndWMkpGY0ZkV1J6RnpUa1U1U0ZWc1FsZGxhekIzV1Zkd1QyVnNXbk5hUlRWU1RURndSMWRYZEd0aFIxRjVZVVprVkZaWWFIVlVNV1JHVFRGR2RWSnVUbFZXTVhCM1ZqRmthbEJTTlRSa1pXRk9UV1ZzVUVWSUxXYzRXblpqV0VFeGFYUmxValZtVW5OVlNVd3lNMVJHY1ZjemNIUk9PRzU0TFVFdGVEYzJMWGRRV1hGR05qQlhOalV6WkhJMldHaFpRbXhQVEVzMU5WUnNXVEJ2UlhCM1FTNVNNRVpHWVZWS2RGUnVXbWxpVkVadldXMW9UVmxyUm5WWFdHeE5ZbXRKZUZkWE1UUmpSbXcxVGxaS1RtSldTVEpXVkVaclRVZFdkRk5zV2xSaWJrSlhWbTB4TkZVeFVuSlZiVVpPVm01Q1YxVXlkRTlXUmxwWllVVldWbVZyU25KVmFrRXhVMVpHY2xOc1drNVNiSEJUVm0xd1QxbFhVbGRpTTJoVFlsZG9VMVpxU205a1ZsWllaRWQwYVdKRk5WaFphMVpQVm0xS1ZXSkZWbFpoYTBwSVdrZDRjMVpzU25WU2JFcFhWbGhDU2xZeWNFTmpNV1J6VW14b2FGTkdjRk5VVldSVFVURmFSMXBGWkZKaVZWcEpWMnRWZUZVd01YUlZhM1JYVFZaYVZGVlVTa3BrTVZKeVlVWktWMkV4Y0haV1ZscHJZakpLYzFSdVNtbFRSVnBZV1cxMGQxUXhiRmRWYkdST1RWaENTRmRyVmpCaGF6RnlWMnhzVjFKdGFGaFdSRVpoWkVkV1NXTkdaRmRpVmtwSlZrWlNTMVF5VFhsVGFscFdZWHBzV0ZSWGVFdGlNVmw1VFZSU1ZFMXJXa2RVVmxaclZrZEtSbGRzV2xwV2VrVXdWMVphYzA1c1JsVlNiWEJwVWxoQ05sWkVSbGRaVjBWNVUyeHNWbFpGV2xkWmExcGhZMnh3U0dWRldteFNia0pHVmpJeGQyRkhSWGhqUnpsWFlXdGFWRlY2Ums1bFJscHpVMnhHVjFKRlNqTldNblJoVjIxT2RHTkZNVkJYUlRSNldrVldXazVXY0VWU1dGSnBZbFJXVVZRd1pHRlZiVXBZWVVSS1ZGSldjSGhXYTFaeVpFZFNSV0ZGY0dsaVZuQlJWMFJKZUZaVk1YUlplbEpxVjBoQ1JsVnJaRlpPUmxwRllrWlNhRTFXU2paWGJYaHZZbGRXY21KNlFsaFdWVEUyVjIxemQyVnNaRlpPV0VwVVZrZFNXVmRYYTNkT1ZrcHlWVzA1VDJGVVJreFVha2sxVWtWNGMxTllaRk5oTVhCdlZteFdkMDFHV2toT1YwWm9WakJ3VmxWdE1EVlhiVXBZVldwS1ZtRnJjRkJWTVZwUFpGWmtkRkpzVGxObGJXY3c
+declare -gx GIT_EDITOR=replit-git-editor
+declare -gx USER=runner
+declare -gx __EGL_VENDOR_LIBRARY_FILENAMES=/nix/store/zxhjnh2d440bhli0zck18s10hcq07qpp-mesa-24.2.2-drivers/share/glvnd/egl_vendor.d/50_mesa.json
+declare -gx REPL_HOME=/home/runner/Galileo-design-Soil-Sample-List
+declare -gx REPL_OWNER=sgmoorthyai
+declare -gx LANG=en_US.UTF-8
+declare -gx REPLIT_RTLD_LOADER=1
+declare -gx REPLIT_LD_AUDIT=/nix/store/n5x1kgbz8zjh63ymsijbislyi1n1hir6-replit_rtld_loader-1/rtld_loader.so
+declare -gx REPLIT_CLI=/nix/store/0fgvx67cxa939djcg1s07j3n1wvpxf7l-pid1-0.0.1/bin/replit
+declare -gx REPLIT_PID1_FLAG_REPLIT_RTLD_LOADER=1
+declare -gx REPLIT_SUBCLUSTER=interactive
+declare -gx REPLIT_PID1_VERSION=0.0.0-98764c7
+declare -gx XDG_CONFIG_HOME=/home/runner/Galileo-design-Soil-Sample-List/.config
+declare -gx DISPLAY=:0
+declare -gx REPLIT_NIX_CHANNEL=stable-23_11
+declare -gx LIBGL_DRIVERS_PATH=/nix/store/zxhjnh2d440bhli0zck18s10hcq07qpp-mesa-24.2.2-drivers/lib/dri
+declare -gx REPLIT_CLUSTER=sisko
+declare -gx LOCALE_ARCHIVE=/usr/lib/locale/locale-archive
+declare -gx XDG_CACHE_HOME=/home/runner/Galileo-design-Soil-Sample-List/.cache
+declare -gx NIX_PATH=nixpkgs=/home/runner/.nix-defexpr/channels/nixpkgs-stable-23_11:/home/runner/.nix-defexpr/channels
+declare -gx COLORTERM=truecolor
+declare -gx PROMPT_DIRTRIM=2
+read -r _new_path <<< "/nix/store/nbcy4pn0926n8rxnc73xi2l0xmwqwdaq-pid1/bin:/nix/store/lq1izmzbmyksppgq72q8yin5arlvm60p-replit-runtime-path/bin:/home/runner/.nix-profile/bin:/home/runner/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
+#PATH=/nix/store/nbcy4pn0926n8rxnc73xi2l0xmwqwdaq-pid1/bin:/nix/store/lq1izmzbmyksppgq72q8yin5arlvm60p-replit-runtime-path/bin:/home/runner/.nix-profile/bin:/home/runner/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+if [ -e "/run/replit/env/last" ]; then read -r _last_path < <(\grep '^#PATH=' /run/replit/env/last | cut -f 2 -d =); fi
+_user_components="$(\tr : $'\n' <<< "${PATH:-}" |\grep -xv -f <(\tr : $'\n' <<< "${_last_path}") |\tr $'\n' :)"
+declare -gx PATH="${_user_components}${_new_path}"
+declare -gx DENO_TLS_CA_STORE=system
+declare -gx HOME=/home/runner
+declare -gx REPLIT_BASHRC=/nix/store/vxzp0jk1x0l6w6v1xhq7fi9rrw2jf2zj-replit-bashrc/bashrc
+declare -gx SSL_CERT_FILE=/etc/ssl/certs/ca-certificates.crt
+declare -gx REPL_ID=66f2a1ad-3375-411b-81be-aa05afee352c
+declare -gx HOSTNAME=a42540c1f766
+declare -gx REPL_PUBKEYS='{"crosis-ci":"7YlpcYh82oR9NSTtSYtR5jDL4onNzCGJGq6b+9CuZII=","crosis-ci:1":"7YlpcYh82oR9NSTtSYtR5jDL4onNzCGJGq6b+9CuZII=","crosis-ci:latest":"7YlpcYh82oR9NSTtSYtR5jDL4onNzCGJGq6b+9CuZII=","prod":"tGsjlu/BJvWTgvMaX7acuUb7AO1dXOrRiuk7y083RFE=","prod:1":"tGsjlu/BJvWTgvMaX7acuUb7AO1dXOrRiuk7y083RFE=","prod:2":"8uGN+vfszlnV93/HCSHlVLG0xddMlPkir1Ni4JKT4+w=","prod:3":"9+MCOSHQSQlcodXoot8dC8NLhc862nLkx1/VMsbY2h8=","prod:4":"8uGN+vfszlnV93/HCSHlVLG0xddMlPkir1Ni4JKT4+w=","prod:5":"9+MCOSHQSQlcodXoot8dC8NLhc862nLkx1/VMsbY2h8=","prod:latest":"tGsjlu/BJvWTgvMaX7acuUb7AO1dXOrRiuk7y083RFE=","vault-goval-token":"D5jJoMx1Ml54HM92NLgXl+MzptwDqbSsfyFG6f52g9E=","vault-goval-token:1":"D5jJoMx1Ml54HM92NLgXl+MzptwDqbSsfyFG6f52g9E=","vault-goval-token:latest":"D5jJoMx1Ml54HM92NLgXl+MzptwDqbSsfyFG6f52g9E="}'
+declare -gx REPL_IMAGE=gcr.io/marine-cycle-160323/nix:bf8590a3e2f0a8b70b7ca175eeed9074dffbfca9
+declare -gx REPLIT_PID1_FLAG_NIXMODULES_BEFORE_REPLIT_NIX=1
+declare -gx REPL_IDENTITY_KEY=k2.secret.EUuFPvu567AVl1uOu4PNdyA3u_u-eChSYhIWBUvD9NPzdVFQ2LHx05bfiPexVYwK8RsZrCFUguD1rsGqUx-JiA
+declare -gx REPL_OWNER_ID=37694715
+declare -gx NODE_EXTRA_CA_CERTS=/etc/ssl/certs/ca-certificates.crt
+declare -gx REPLIT_DB_URL=https://kv.replit.com/v0/eyJhbGciOiJIUzUxMiIsImlzcyI6ImNvbm1hbiIsImtpZCI6InByb2Q6MSIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJjb25tYW4iLCJleHAiOjE3MzEyNjg4ODUsImlhdCI6MTczMTE1NzI4NSwiZGF0YWJhc2VfaWQiOiI2NmYyYTFhZC0zMzc1LTQxMWItODFiZS1hYTA1YWZlZTM1MmMifQ.CvZlsm1JfWmxgGnRFP9w66mSiIWDxVOFmY1TM_Af_Dr9a70Z7JStERV3GlhCCUZbqpM1AsqOp47ULEJB_6eWMA
+declare -gx REPLIT_DOMAINS=66f2a1ad-3375-411b-81be-aa05afee352c-00-1lni0oh41rk7y.sisko.replit.dev
+declare -gx REQUESTS_CA_BUNDLE=/etc/ssl/certs/ca-certificates.crt
+declare -gx REPL_SLUG=Galileo-design-Soil-Sample-List
+declare -gx REPLIT_DEV_DOMAIN=66f2a1ad-3375-411b-81be-aa05afee352c-00-1lni0oh41rk7y.sisko.replit.dev
+declare -gx NIXPKGS_ALLOW_UNFREE=1
+declare -gx REPLIT_RIPPKGS_INDICES=/nix/store/73awzgwmrga8y0dl84cp30h40965wyk5-rippkgs-indices
+declare -gx XDG_DATA_HOME=/home/runner/Galileo-design-Soil-Sample-List/.local/share
+declare -gx DOCKER_CONFIG=/home/runner/Galileo-design-Soil-Sample-List/.config/docker
+declare -gx GIT_ASKPASS=replit-git-askpass
+declare -gx REPL_LANGUAGE=html
