@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="" />
+  <link rel="stylesheet" as="style" onload="this.rel='stylesheet'"
+    href="https://fonts.googleapis.com/css2?display=swap&family=Manrope%3Awght%40400%3B500%3B700%3B800&family=Noto+Sans%3Awght%40400%3B500%3B700%3B900" />
+  <title>Submit Sample - Siva Peedam</title>
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-gradient-to-br from-[#f8f5f2] to-[#efe9e1]">
+  <div class="max-w-4xl mx-auto px-4 py-8">
+    <a href="/" class="mb-6 inline-flex items-center text-[#8a7860] hover:text-[#5a4d3d]">
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 256 256">
+        <path d="M224,128a8,8,0,0,1-8,8H59.31l58.35,58.34a8,8,0,0,1-11.32,11.32l-72-72a8,8,0,0,1,0-11.32l72-72a8,8,0,0,1,11.32,11.32L59.31,120H216A8,8,0,0,1,224,128Z"></path>
+      </svg>
+      <span class="ml-2 font-medium">Back to Home</span>
+    </a>
+    
+    <h2 class="text-3xl font-bold text-[#181511] mb-8">Soil Sample Submission</h2>
+    
+    <form id="registrationForm" class="space-y-6 bg-white p-6 rounded-xl shadow-sm">
+      <!-- Existing form fields -->
+      <div class="space-y-4">
+        <div class="space-y-2">
+          <label class="text-[#181511] font-medium">Volunteer Information</label>
+          <input type="text" placeholder="Full Name" class="w-full p-3 border rounded-lg" required>
+          <input type="email" placeholder="Email" class="w-full p-3 border rounded-lg" required>
+          <input type="tel" placeholder="Phone Number" class="w-full p-3 border rounded-lg" required>
+        </div>
+
+        <div class="space-y-2">
+          <label class="text-[#181511] font-medium">Soil Sample Details</label>
+          <input type="text" placeholder="Collection Location" class="w-full p-3 border rounded-lg" required>
+          <input type="date" class="w-full p-3 border rounded-lg" required>
+          <textarea placeholder="Significance of this sample" class="w-full p-3 border rounded-lg h-32" required></textarea>
+        </div>
+
+        <div class="space-y-2">
+          <label class="text-[#181511] font-medium">Additional Comments</label>
+          <textarea placeholder="Observations or notes" class="w-full p-3 border rounded-lg h-24"></textarea>
+        </div>
+
+        <button type="submit" class="w-full py-3 px-6 bg-[#181511] text-white rounded-lg font-medium hover:bg-opacity-90 transition-colors">
+          Submit Sample
+        </button>
+      </div>
+    </form>
+  </div>
+</body>
+</html>

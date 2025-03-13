@@ -2,3 +2,27 @@ html {
   height: 100%;
   width: 100%;
 }
+
+/* Enhanced Form Styles */
+input, textarea {
+  @apply transition-all duration-200 ease-out;
+  border: 1px solid #e2dcd4;
+}
+
+input:focus, textarea:focus {
+  @apply ring-2 ring-[#8a7860] border-[#8a7860] outline-none;
+}
+
+button[type="submit"] {
+  @apply transition-transform duration-200 hover:scale-[1.02] active:scale-95;
+}
+
+@media (max-width: 768px) {
+  .max-w-4xl {
+    @apply px-2;
+  }
+  
+  input, textarea, button {
+    @apply text-base p-3;
+  }
+}

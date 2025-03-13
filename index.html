@@ -11,73 +11,219 @@
   <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
 </head>
 
-<body>
-  <div class="relative flex size-full min-h-screen flex-col bg-white group/design-root overflow-x-hidden"
-    style='font-family: Manrope, "Noto Sans", sans-serif;'>
-    <div class="flex items-center bg-white p-4 pb-2 justify-between">
-      <h2 class="text-[#181511] text-lg font-bold leading-tight tracking-[-0.015em] flex-1 text-center pl-12">Siva
-        Peedam soil collection
-      </h2>
-      <div class="flex w-12 items-center justify-end">
-        <button
-          class="flex max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-xl h-12 bg-transparent text-[#181511] gap-2 text-base font-bold leading-normal tracking-[0.015em] min-w-0 p-0">
-          <div class="text-[#181511]" data-icon="Plus" data-size="24px" data-weight="regular">
-            <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor"
-              viewBox="0 0 256 256">
-              <path
-                d="M224,128a8,8,0,0,1-8,8H136v80a8,8,0,0,1-16,0V136H40a8,8,0,0,1,0-16h80V40a8,8,0,0,1,16,0v80h80A8,8,0,0,1,224,128Z">
-              </path>
-            </svg>
+<body class="bg-gradient-to-br from-[#f8f5f2] to-[#efe9e1]">
+  <div class="relative flex size-full min-h-screen flex-col group/design-root overflow-x-hidden" style='font-family: Manrope, "Noto Sans", sans-serif;'>
+    <!-- Hero Section -->
+    <div class="px-4 pt-8 pb-12 text-center space-y-6">
+      <div class="relative w-full h-[400px] mb-8 rounded-xl overflow-hidden">
+        <img src="images/kailash.jpg" alt="Mount Kailash" class="w-full h-full object-cover">
+        <div class="absolute inset-0 bg-gradient-to-b from-transparent to-black/50 flex items-end justify-center p-8">
+          <p class="text-white text-xl font-medium max-w-3xl text-center">The sacred path of the Guru leads us to Mount Kailash, the abode of Lord Shiva</p>
+        </div>
+      </div>
+      <h1 class="text-4xl md:text-5xl font-bold text-[#181511] leading-tight">
+        <span class="bg-clip-text text-transparent bg-gradient-to-r from-[#8a7860] to-[#5a4d3d]">
+          Sacred Soil Collection
+        </span>
+      </h1>
+      <p class="text-lg md:text-xl text-[#5a4d3d] max-w-2xl mx-auto leading-relaxed">
+        Preserving the spiritual heritage of ancient lands through collaborative soil preservation. 
+        Join us in documenting and protecting these energy-rich ecosystems.
+      </p>
+      <a href="submit.html" class="inline-block px-8 py-3 bg-[#8a7860] text-white rounded-lg font-medium hover:bg-[#5a4d3d] transition-colors">
+        Submit Sample
+      </a>
+    </div>
+
+    <!-- Sacred Significance Section -->
+    <div class="max-w-4xl mx-auto px-4 w-full flex-1">
+      <div class="bg-gradient-to-r from-[#f3efe9] to-[#e9e1d8] rounded-xl shadow-sm p-8 mb-8 space-y-6">
+        <h2 class="text-3xl font-bold text-[#181511] mb-4">Sacred Soil Collection and Building a Peedam</h2>
+        <p class="text-[#5a4d3d] leading-relaxed mb-6">
+          Collecting soil from sacred places to construct a peedam (a pedestal or sanctum) for a beloved guru is a profound act of devotion. It symbolizes gathering the essence of divinity from various holy sites, uniting them to create a space that embodies spiritual energy and gratitude. This act is not just physical but deeply symbolic, representing the disciple's journey of seeking blessings and channeling divine vibrations into a tangible form.
+        </p>
+        
+        <div class="space-y-4">
+          <h3 class="text-2xl font-bold text-[#181511]">Gratitude Towards the Guru</h3>
+          <p class="text-[#5a4d3d] leading-relaxed">
+            Expressing gratitude to a guru is central to such events. The guru is seen as the remover of darkness (gu - darkness, ru - remover) and a guide to enlightenment. The Thirumanthiram highlights the guru's role:
+          </p>
+          <blockquote class="border-l-4 border-[#8a7860] pl-4 py-2 my-4 bg-white rounded">
+            <p class="text-[#181511] font-medium italic">
+              "தெளிவு குருவின் திருமேனி காணல்!<br>
+              தெளிவு குருவின் திருவார்த்தை கேட்டல்!<br>
+              தெளிவு குருவின் திருநாமம் சொல்லல்!<br>
+              தெளிவு குரு உரு சிந்தித்தல்தானே !"
+            </p>
+          </blockquote>
+        </div>
+      </div>
+
+      <!-- Collection Header -->
+      <div class="flex items-center bg-white p-4 pb-2 justify-between rounded-xl shadow-sm mb-8">
+        <h2 class="text-[#181511] text-lg font-bold leading-tight tracking-[-0.015em] flex-1 text-center pl-12">Siva
+          Peedam soil collection
+        </h2>
+        <div class="flex w-12 items-center justify-end">
+          <a href="submit.html"
+            class="flex max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-xl h-12 bg-transparent text-[#181511] gap-2 text-base font-bold leading-normal tracking-[0.015em] min-w-0 p-0">
+            <div class="text-[#181511]" data-icon="Plus" data-size="24px" data-weight="regular">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor" viewBox="0 0 256 256">
+                <path d="M224,128a8,8,0,0,1-8,8H136v80a8,8,0,0,1-16,0V136H40a8,8,0,0,1,0-16h80V40a8,8,0,0,1,16,0v80h80A8,8,0,0,1,224,128Z"></path>
+              </svg>
+            </div>
+          </a>
+        </div>
+      </div>
+      <!-- Project Details Section -->
+      <div class="bg-white rounded-xl shadow-sm p-6 mb-8 space-y-6">
+        <div class="space-y-4">
+          <h3 class="text-2xl font-bold text-[#181511]">Project Significance</h3>
+          <div class="grid md:grid-cols-2 gap-6 text-[#5a4d3d]">
+            <div class="space-y-3">
+              <div class="flex items-center gap-3">
+                <div class="text-[#8a7860]" data-icon="Globe" data-size="24px">
+                  <!-- SVG globe icon -->
+                </div>
+                <h4 class="font-medium">Cultural Preservation</h4>
+              </div>
+              <p class="text-sm leading-relaxed">Documenting soil compositions from sacred sites helps preserve ancient cultural heritage and spiritual practices.</p>
+            </div>
+            <!-- More detail blocks... -->
           </div>
-        </button>
-      </div>
-    </div>
-    <div class="p-4">
-      <div class="flex items-stretch justify-between gap-4 rounded-xl">
-        <div class="flex flex-col gap-1 flex-[2_2_0px]">
-          <p class="text-[#181511] text-base font-bold leading-tight">Kailash, IN</p>
-          <p class="text-[#8a7860] text-sm font-normal leading-normal">28/07/2010</p>
-        </div>
-        <div class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-xl flex-1"
-          style='background-image: url("https://cdn.usegalileo.ai/stability/b5b0eb69-859d-4587-aec2-0aca9ba27be7.png");'>
         </div>
       </div>
-    </div>
-    <div class="p-4">
-      <div class="flex items-stretch justify-between gap-4 rounded-xl">
-        <div class="flex flex-col gap-1 flex-[2_2_0px]">
-          <p class="text-[#181511] text-base font-bold leading-tight">Sankarankoil,IN</p>
-          <p class="text-[#8a7860] text-sm font-normal leading-normal">NA</p>
+
+      <!-- Soil Sample Cards Grid -->
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
+        <!-- Kailash Card -->
+        <div class="bg-white rounded-xl shadow-sm p-6 transition-all duration-300 hover:shadow-md">
+          <div class="flex items-stretch justify-between gap-4 rounded-xl">
+            <div class="flex flex-col gap-1 flex-[2_2_0px]">
+              <p class="text-[#181511] text-base font-bold leading-tight">Kailash, IN</p>
+              <p class="text-[#8a7860] text-sm font-normal leading-normal">28/07/2010</p>
+            </div>
+            <div class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-xl flex-1"
+              style='background-image: url("https://cdn.usegalileo.ai/stability/b5b0eb69-859d-4587-aec2-0aca9ba27be7.png");'>
+            </div>
+          </div>
         </div>
-        <div class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-xl flex-1"
-          style='background-image: url("https://cdn.usegalileo.ai/stability/aae52235-7452-4c24-988c-8959b2e9ac12.png");'>
+
+        <!-- Sankarankoil Card -->
+        <div class="bg-white rounded-xl shadow-sm p-6 transition-all duration-300 hover:shadow-md">
+          <div class="flex items-stretch justify-between gap-4 rounded-xl">
+            <div class="flex flex-col gap-1 flex-[2_2_0px]">
+              <p class="text-[#181511] text-base font-bold leading-tight">Sankarankoil, IN</p>
+              <p class="text-[#8a7860] text-sm font-normal leading-normal">NA</p>
+            </div>
+            <div class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-xl flex-1"
+              style='background-image: url("https://cdn.usegalileo.ai/stability/aae52235-7452-4c24-988c-8959b2e9ac12.png");'>
+            </div>
+          </div>
+        </div>
+
+        <!-- Korukkai Card -->
+        <div class="bg-white rounded-xl shadow-sm p-6 transition-all duration-300 hover:shadow-md">
+          <div class="flex items-stretch justify-between gap-4 rounded-xl">
+            <div class="flex flex-col gap-1 flex-[2_2_0px]">
+              <p class="text-[#181511] text-base font-bold leading-tight">Korukkai, pasma kundam</p>
+              <p class="text-[#8a7860] text-sm font-normal leading-normal">NA</p>
+            </div>
+            <div class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-xl flex-1"
+              style='background-image: url("https://cdn.usegalileo.ai/sdxl10/ef3875f2-b685-4013-8a51-e379f059ff6f.png");'>
+            </div>
+          </div>
+        </div>
+
+        <!-- Velliyangiri Card -->
+        <div class="bg-white rounded-xl shadow-sm p-6 transition-all duration-300 hover:shadow-md">
+          <div class="flex items-stretch justify-between gap-4 rounded-xl">
+            <div class="flex flex-col gap-1 flex-[2_2_0px]">
+              <p class="text-[#181511] text-base font-bold leading-tight">Velliyangiri, IN</p>
+              <p class="text-[#8a7860] text-sm font-normal leading-normal">NA</p>
+            </div>
+            <div class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-xl flex-1"
+              style='background-image: url("https://cdn.usegalileo.ai/sdxl10/af59f732-f04c-40d9-82d8-dc39731e48bb.png");'>
+            </div>
+          </div>
         </div>
       </div>
     </div>
-    <div class="p-4">
-      <div class="flex items-stretch justify-between gap-4 rounded-xl">
-        <div class="flex flex-col gap-1 flex-[2_2_0px]">
-          <p class="text-[#181511] text-base font-bold leading-tight">Korukkai, pasma kundam</p>
-          <p class="text-[#8a7860] text-sm font-normal leading-normal">NA</p>
+
+    <!-- After Hero Section -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"/>
+    
+    <!-- Map Container -->
+    <div class="bg-white rounded-xl shadow-sm p-6 mb-8">
+      <h3 class="text-2xl font-bold text-[#181511] mb-6">Collection Sites Map</h3>
+      <div id="collectionMap" class="h-96 rounded-lg border-2 border-[#e2dcd4]"></div>
+    </div>
+
+    </div>
+
+    <!-- Footer Section -->
+    <footer class="bg-[#f3efe9] mt-12 py-8">
+      <div class="max-w-4xl mx-auto px-4">
+        <div class="grid md:grid-cols-3 gap-8">
+          <!-- Contact Info -->
+          <div>
+            <h4 class="text-[#181511] font-bold text-lg mb-4">Contact Us</h4>
+            <ul class="space-y-2 text-[#5a4d3d]">
+              <li>Email: info@sivapeedam.org</li>
+              <li>Phone: +91 (123) 456-7890</li>
+              <li>Address: Tamil Nadu, India</li>
+            </ul>
+          </div>
+          <!-- Quick Links -->
+          <div>
+            <h4 class="text-[#181511] font-bold text-lg mb-4">Quick Links</h4>
+            <ul class="space-y-2">
+              <li><a href="#" class="text-[#8a7860] hover:text-[#5a4d3d]">About Project</a></li>
+              <li><a href="submit.html" class="text-[#8a7860] hover:text-[#5a4d3d]">Submit Sample</a></li>
+              <li><a href="#" class="text-[#8a7860] hover:text-[#5a4d3d]">View Collection</a></li>
+            </ul>
+          </div>
+          <!-- Social Media -->
+          <div>
+            <h4 class="text-[#181511] font-bold text-lg mb-4">Follow Us</h4>
+            <div class="flex space-x-4">
+              <a href="#" class="text-[#8a7860] hover:text-[#5a4d3d]">
+                <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z"/>
+                </svg>
+              </a>
+              <a href="#" class="text-[#8a7860] hover:text-[#5a4d3d]">
+                <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84"/>
+                </svg>
+              </a>
+              <a href="#" class="text-[#8a7860] hover:text-[#5a4d3d]">
+                <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                  <path fill-rule="evenodd" d="M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 011.772 1.153 4.902 4.902 0 011.153 1.772c.247.636.416 1.363.465 2.427.048 1.067.06 1.407.06 4.123v.08c0 2.643-.012 2.987-.06 4.043-.049 1.064-.218 1.791-.465 2.427a4.902 4.902 0 01-1.153 1.772 4.902 4.902 0 01-1.772 1.153c-.636.247-1.363.416-2.427.465-1.067.048-1.407.06-4.123.06h-.08c-2.643 0-2.987-.012-4.043-.06-1.064-.049-1.791-.218-2.427-.465a4.902 4.902 0 01-1.772-1.153 4.902 4.902 0 01-1.153-1.772c-.247-.636-.416-1.363-.465-2.427-.047-1.024-.06-1.379-.06-3.808v-.63c0-2.43.013-2.784.06-3.808.049-1.064.218-1.791.465-2.427a4.902 4.902 0 011.153-1.772A4.902 4.902 0 015.45 2.525c.636-.247 1.363-.416 2.427-.465C8.901 2.013 9.256 2 11.685 2h.63zm-.081 1.802h-.468c-2.456 0-2.784.011-3.807.058-.975.045-1.504.207-1.857.344-.467.182-.8.398-1.15.748-.35.35-.566.683-.748 1.15-.137.353-.3.882-.344 1.857-.047 1.023-.058 1.351-.058 3.807v.468c0 2.456.011 2.784.058 3.807.045.975.207 1.504.344 1.857.182.466.399.8.748 1.15.35.35.683.566 1.15.748.353.137.882.3 1.857.344 1.054.048 1.37.058 4.041.058h.08c2.597 0 2.917-.01 3.96-.058.976-.045 1.505-.207 1.858-.344.466-.182.8-.398 1.15-.748.35-.35.566-.683.748-1.15.137-.353.3-.882.344-1.857.048-1.055.058-1.37.058-4.041v-.08c0-2.597-.01-2.917-.058-3.96-.045-.976-.207-1.505-.344-1.858a3.097 3.097 0 00-.748-1.15 3.098 3.098 0 00-1.15-.748c-.353-.137-.882-.3-1.857-.344-1.023-.047-1.351-.058-3.807-.058zM12 6.865a5.135 5.135 0 110 10.27 5.135 5.135 0 010-10.27zm0 1.802a3.333 3.333 0 100 6.666 3.333 3.333 0 000-6.666zm5.338-3.205a1.2 1.2 0 110 2.4 1.2 1.2 0 010-2.4z" clip-rule="evenodd"/>
+                </svg>
+              </a>
+            </div>
+          </div>
         </div>
-        <div class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-xl flex-1"
-          style='background-image: url("https://cdn.usegalileo.ai/sdxl10/ef3875f2-b685-4013-8a51-e379f059ff6f.png");'>
+        <div class="mt-8 pt-8 border-t border-[#e2dcd4] text-center text-[#5a4d3d]">
+          <p>&copy; 2024 Siva Peedam. All rights reserved.</p>
         </div>
       </div>
-    </div>
-    <div class="p-4">
-      <div class="flex items-stretch justify-between gap-4 rounded-xl">
-        <div class="flex flex-col gap-1 flex-[2_2_0px]">
-          <p class="text-[#181511] text-base font-bold leading-tight">Velliyangiri,IN</p>
-          <p class="text-[#8a7860] text-sm font-normal leading-normal">NA</p>
-        </div>
-        <div class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-xl flex-1"
-          style='background-image: url("https://cdn.usegalileo.ai/sdxl10/af59f732-f04c-40d9-82d8-dc39731e48bb.png");'>
-        </div>
-      </div>
-    </div>
-    <div class="h-5 bg-white"></div>
-  </div>
+    </footer>
+
+    <!-- Before closing body tag -->
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script>
+      const map = L.map('collectionMap').setView([10.1066, 77.5419], 7);
+      L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png').addTo(map);
+      
+      // Sample coordinates from existing entries
+      L.marker([31.0685, 81.3124]).addTo(map)
+        .bindPopup('Mount Kailash Sacred Site');
+      
+      L.marker([8.8936, 77.3247]).addTo(map)
+        .bindPopup('Sankarankoil Temple Grounds');
+    </script>
 </body>
 
 </html>
