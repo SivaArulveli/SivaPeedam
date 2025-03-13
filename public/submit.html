@@ -6,9 +6,22 @@
     href="https://fonts.googleapis.com/css2?display=swap&family=Manrope%3Awght%40400%3B500%3B700%3B800&family=Noto+Sans%3Awght%40400%3B500%3B700%3B900" />
   <title>Submit Sample - Siva Peedam</title>
   <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../style.css">
 </head>
 <body class="bg-gradient-to-br from-[#f8f5f2] to-[#efe9e1]">
+  <!-- Navigation Header -->
+  <header class="bg-white shadow-sm">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-between items-center py-4">
+        <a href="/" class="text-2xl font-bold text-[#181511]">Siva Peedam</a>
+        <nav class="flex space-x-8">
+          <a href="/" class="text-[#8a7860] hover:text-[#5a4d3d] font-medium">Home</a>
+          <a href="submit.html" class="text-[#8a7860] hover:text-[#5a4d3d] font-medium">Submit Sample</a>
+          <a href="submissions.html" class="text-[#8a7860] hover:text-[#5a4d3d] font-medium">View Submissions</a>
+        </nav>
+      </div>
+    </div>
+  </header>
   <div class="max-w-4xl mx-auto px-4 md:px-8 py-6 md:py-8">
     <a href="/" class="mb-6 inline-flex items-center text-[#8a7860] hover:text-[#5a4d3d]">
       <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 md:w-6 md:h-6" width="24" height="24" fill="currentColor" viewBox="0 0 256 256">
@@ -24,21 +37,21 @@
       <div class="space-y-4">
         <div class="space-y-2">
           <label class="text-[#181511] text-sm md:text-base font-medium">Volunteer Information</label>
-          <input type="text" placeholder="Full Name" class="w-full p-3 border rounded-lg" required>
-          <input type="email" placeholder="Email" class="w-full p-3 border rounded-lg" required>
-          <input type="tel" placeholder="Phone Number" class="w-full p-3 border rounded-lg" required>
+          <input type="text" id="volunteerName" placeholder="Full Name" class="w-full p-3 border rounded-lg" required>
+          <input type="email" id="volunteerEmail" placeholder="Email" class="w-full p-3 border rounded-lg" required>
+          <input type="tel" id="volunteerPhone" placeholder="Phone Number" class="w-full p-3 border rounded-lg" required>
         </div>
 
         <div class="space-y-2">
           <label class="text-[#181511] text-sm md:text-base font-medium">Soil Sample Details</label>
-          <input type="text" placeholder="Collection Location" class="w-full p-3 border rounded-lg" required>
-          <input type="date" class="w-full p-3 border rounded-lg" required>
-          <textarea placeholder="Significance of this sample" class="w-full p-3 border rounded-lg h-32" required></textarea>
+          <input type="text" id="sampleLocation" placeholder="Collection Location" class="w-full p-3 border rounded-lg" required>
+          <input type="date" id="sampleDate" class="w-full p-3 border rounded-lg" required>
+          <textarea id="sampleSignificance" placeholder="Significance of this sample" class="w-full p-3 border rounded-lg h-32" required></textarea>
         </div>
 
         <div class="space-y-2">
           <label class="text-[#181511] text-sm md:text-base font-medium">Additional Comments</label>
-          <textarea placeholder="Observations or notes" class="w-full p-3 border rounded-lg h-24"></textarea>
+          <textarea id="sampleComments" placeholder="Observations or notes" class="w-full p-3 border rounded-lg h-24"></textarea>
         </div>
 
         <button type="submit" class="w-full py-3 px-6 bg-[#181511] text-white rounded-lg font-medium hover:bg-opacity-90 transition-colors">
@@ -46,6 +59,15 @@
         </button>
       </div>
     </form>
+
+    <div id="submissionResult" class="hidden mt-8">
+      <div class="text-center mb-8 bg-[#f8f5f2] p-6 rounded-xl">
+        <h3 class="text-2xl font-bold text-[#181511] mb-4">🙏 Thank you for your sacred contribution!</h3>
+        <p class="text-[#8a7860]">Your submission has been added to the eternal archive</p>
+      </div>
+      <div id="submissionGrid" class="grid gap-4 md:grid-cols-2 lg:grid-cols-3"></div>
+    </div>
   </div>
 </body>
+<script src="../script.js"></script>
 </html>

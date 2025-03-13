@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sacred Submissions - Siva Peedam</title>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600&family=Noto+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
+  <script src="firebase-config.js"></script>
+  <script src="../script.js" defer></script>
+</head>
+<body class="bg-[#f8f5f2] min-h-screen">
+  <!-- Navigation Header -->
+  <header class="bg-white shadow-sm">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-between items-center py-4">
+        <a href="/" class="text-2xl font-bold text-[#181511]">Siva Peedam</a>
+        <nav class="flex space-x-8">
+          <a href="/" class="text-[#8a7860] hover:text-[#5a4d3d] font-medium">Home</a>
+          <a href="submit.html" class="text-[#8a7860] hover:text-[#5a4d3d] font-medium">Submit Sample</a>
+          <a href="submissions.html" class="text-[#8a7860] hover:text-[#5a4d3d] font-medium">View Submissions</a>
+        </nav>
+      </div>
+    </div>
+  </header>
+  <div class="max-w-4xl mx-auto px-4 py-12">
+    <div class="text-center mb-8 bg-white rounded-xl shadow-sm p-8">
+      <h1 class="text-3xl font-bold text-[#181511] mb-4">🙏 Divine Contributions</h1>
+      <p class="text-[#8a7860]">Below are the sacred soil samples offered by devotees worldwide</p>
+      <p class="text-[#5a4d3d] mb-4">Explore the sacred contributions from our devoted community.</p>
+    </div>
+    
+    <div id="submissionsGrid" class="grid grid-cols-1 md:grid-cols-2 gap-6">
+      <!-- Sample entries will be dynamically inserted here -->
+    </div>
+  </div>
+
+  <script>
+    // Initialize sample data
+    const sampleSubmissions = [
+      {
+        location: "Mount Kailash, Tibet",
+        date: "2024-01-15",
+        significance: "Sacred abode of Lord Shiva, representing spiritual ascension and divine consciousness."
+      },
+      {
+        location: "Varanasi Ghats, India",
+        date: "2024-01-20",
+        significance: "Ancient holy city where the eternal flame of spirituality burns bright."
+      },
+      {
+        location: "Kedarnath Temple, India",
+        date: "2024-02-01",
+        significance: "One of the twelve Jyotirlingas, embodying the cosmic light of Lord Shiva."
+      },
+      {
+        location: "Pashupatinath Temple, Nepal",
+        date: "2024-02-10",
+        significance: "Sacred temple dedicated to Lord Pashupatinath, protector of all living beings."
+      }
+    ];
+
+    document.addEventListener('DOMContentLoaded', async () => {
+      const grid = document.getElementById('submissionsGrid');
+      
+      try {
+        // Fetch and display all submissions
+        console.log('Fetching submissions from Firestore...');
+        const querySnapshot = await db.collection('submissions').orderBy('sample.timestamp', 'desc').get();
+        
+        if (querySnapshot.empty) {
+          console.log('No submissions found in Firestore');
+          grid.innerHTML = `
+            <div class="col-span-full text-center p-6 bg-white rounded-xl shadow-sm">
+              <p class="text-[#5a4d3d]">No sacred soil submissions available yet. Be the first to contribute!</p>
+            </div>
+          `;
+          return;
+        }
+
+        console.log(`Found ${querySnapshot.size} submissions`);
+        querySnapshot.forEach(doc => {
+          const data = doc.data();
+          console.log('Submission data:', data);
+          grid.innerHTML += `
+            <div class="bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition-shadow duration-300">
+              <h3 class="font-bold text-[#181511] text-xl mb-3">${data.sample.location}</h3>
+              <p class="text-sm text-[#5a4d3d] mb-3">
+                <span class="font-medium">Collected:</span> 
+                ${new Date(data.sample.date).toLocaleDateString()}
+              </p>
+              <p class="text-sm text-[#8a7860] leading-relaxed">${data.sample.significance}</p>
+            </div>
+          `;
+        });
+      } catch (error) {
+        console.error('Error managing submissions:', error);
+        grid.innerHTML = `
+          <div class="col-span-full text-center p-6 bg-white rounded-xl shadow-sm">
+            <p class="text-[#5a4d3d]">Unable to load submissions. Please try refreshing the page.</p>
+          </div>
+        `;
+      }
+    });
+  </script>
+</body>
+</html>

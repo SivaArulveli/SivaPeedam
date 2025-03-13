@@ -1,73 +1,67 @@
 # Siva Peedam - Sacred Soil Collection Project
 
-A web-based platform for documenting and preserving sacred soil samples from spiritually significant locations. This project aims to create a digital archive of soil samples along with their cultural and spiritual significance.
-
-## Project Overview
-
-The Sacred Soil Collection Project is dedicated to preserving the spiritual heritage of ancient lands through collaborative soil preservation. By collecting and documenting soil samples from sacred sites, we create a valuable resource for understanding and protecting these energy-rich ecosystems.
-
-## Tech Stack
-
-- **Frontend Framework:**
-  - HTML5
-  - TailwindCSS for responsive styling
-  - JavaScript (ES6+)
-
-- **Map Integration:**
-  - Leaflet.js for interactive mapping
-  - OpenStreetMap for base layer tiles
-
-- **UI Components:**
-  - Custom form components
-  - Responsive grid layout
-  - Modern gradient backgrounds
-  - Google Fonts (Manrope, Noto Sans)
+## Overview
+Siva Peedam is a spiritual web application dedicated to collecting and preserving sacred soil samples from various holy sites. The project serves as a digital platform for devotees to contribute soil samples and share their spiritual significance in constructing a peedam (sacred pedestal).
 
 ## Features
 
-### 1. Interactive Map Display
-- Real-time visualization of collection sites
-- Clickable markers with site information
-- Responsive map controls
+### Current Features
+- **Sample Submission**
+  - User-friendly form for submitting sacred soil samples
+  - Location, date, and spiritual significance documentation
+  - Image upload capability
 
-### 2. User Registration
-- Volunteer information collection
-  - Name
-  - Email
-  - Phone number
-- Form validation
+- **Sample Viewing**
+  - Chronological display of all submitted samples
+  - Detailed view of each sample's information
+  - Responsive grid layout for optimal viewing
 
-### 3. Soil Sample Documentation
-- Detailed sample information capture
-  - Collection location
-  - Collection date
-  - Sample significance
-- Additional observations field
-- Image upload capability
+- **Firebase Integration**
+  - Real-time data storage and retrieval
+  - Secure sample submission handling
+  - Efficient data management
 
-### 4. Responsive Design
-- Mobile-first approach
-- Adaptive layouts
-- Touch-friendly interface
+### Technical Implementation
+- **Frontend**
+  - HTML5 and modern CSS with Tailwind CSS
+  - Responsive design for all device sizes
+  - Clean and intuitive user interface
+
+- **Backend**
+  - Firebase Firestore for data storage
+  - Firebase Hosting for deployment
+  - Secure configuration management
 
 ## Setup Instructions
 
-1. Clone the repository:
+1. **Prerequisites**
+   - Node.js installed
+   - Firebase account and project setup
+
+2. **Installation**
    ```bash
+   # Clone the repository
    git clone [repository-url]
    cd SivaPeedam
+
+   # Install dependencies (if any)
+   npm install
+
+   # Configure Firebase
+   # Update firebase-config.js with your credentials
    ```
 
-2. Open the project:
-   - Use any web server to serve the files
-   - For development, you can use:
-     ```bash
-     npx http-server .
-     ```
+3. **Development**
+   ```bash
+   # Start local development server
+   npx http-server
+   ```
 
-3. Access the application:
-   - Open `http://localhost:8080` in your browser
-   - Navigate to the submission form via the "Submit Sample" button
+4. **Deployment**
+   ```bash
+   # Deploy to Firebase
+   firebase deploy
+   ```
 
 ## Future Enhancements
 
@@ -92,19 +86,10 @@ The Sacred Soil Collection Project is dedicated to preserving the spiritual heri
    - GPS integration
 
 ## Contributing
-
-We welcome contributions to enhance the Sacred Soil Collection Project. Please follow these steps:
-
-1. Fork the repository
-2. Create a feature branch
-3. Commit your changes
-4. Push to the branch
-5. Create a Pull Request
+Contributions are welcome! Please feel free to submit a Pull Request.
 
 ## License
-
 This project is licensed under the MIT License - see the LICENSE file for details.
 
-## Contact
-
-For questions and support, please reach out to the project maintainers or create an issue in the repository.
+## Acknowledgments
+Special thanks to all devotees who contribute to this sacred collection and help preserve our spiritual heritage.
